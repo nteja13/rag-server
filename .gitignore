@@ -102,3 +102,9 @@ htmlcov/
 
 # FastAPI specific
 .pytest_cache
+
+
+supabase/.temp/
+supabase/.branches/
+.env
+__pycache__/
