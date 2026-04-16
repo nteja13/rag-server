@@ -2,6 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from routers import users
+from routers import projects
 import os
 
 
@@ -25,6 +26,7 @@ app.add_middleware(
 )
 
 app.include_router(users.router)
+app.include_router(projects.router)
 
 # Health check endpoints
 @app.get("/")
